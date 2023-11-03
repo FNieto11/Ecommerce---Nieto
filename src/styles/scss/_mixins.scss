@@ -1,0 +1,5 @@
+@mixin boton ($bg-color,$color) {
+    background-color: $bg-color;
+    color: $color;
+    font-family: $font-page;
+}

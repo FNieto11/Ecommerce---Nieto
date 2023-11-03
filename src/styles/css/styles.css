@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf) format("truetype");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.cards-wrapper .card .descripcionTarjeta, .mainContacto .ubicacionContacto, .mainContacto .tituloContacto, .nosotros .evolucionHistorica, .redesSociales, .suscripcionMail, .ubicacion, footer .seccionFooter ul li a, footer .seccionFooter .tituloFooter, .seccionInicio .producto a, .seccionInicio, h1, h2, .titulo, .tituloProducto {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 2px solid #80C58D;
+  margin: 1.5%;
+}
+nav .navbar-brand {
+  width: 30%;
+}
+nav .navbar-brand .logo {
+  width: 100%;
+}
+nav .navbar-toggler {
+  color: #80C58D;
+}
+nav .nav-link {
+  color: #BD81A0;
+  font-size: x-large;
+  text-align: end;
+  font-family: "Pacifico", cursive;
+}
+
+@media (min-width: 640px) {
+  .navbar-brand {
+    width: 25%;
+  }
+  .navbar-toggler {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr;
+  }
+  .container-fluid .navbar-brand {
+    width: 85%;
+  }
+  .container-fluid .navbar-nav {
+    display: grid !important;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+  }
+  .container-fluid .navbar-nav .nav-link {
+    color: #BD81A0;
+  }
+}
+h1, h2, .titulo, .tituloProducto {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+  text-align: center;
+  margin: 20px;
+}
+
+.seccionInicio {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.seccionInicio .producto {
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+.seccionInicio .producto:hover {
+  background-image: none;
+}
+.seccionInicio .producto a {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-decoration: none;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  font-size: large;
+}
+.seccionInicio .producto a:hover {
+  opacity: 1;
+}
+.seccionInicio .tortas {
+  background-image: url(../images/torta.jpg);
+}
+.seccionInicio .macarons {
+  background-image: url(../images/macarron.jfif);
+}
+.seccionInicio .cookies {
+  background-image: url(../images/cookies.jfif);
+  text-align: center;
+}
+.seccionInicio .petitsFours {
+  background-image: url(../images/petitsFours.jfif);
+}
+
+.opinion {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
+  height: 100%;
+  width: 250px;
+  border: 1px solid #80C58D;
+  text-align: justify;
+}
+.opinion img {
+  width: 40%;
+}
+
+footer {
+  background-color: #80C58D;
+  padding: 10px 0px;
+}
+footer .seccionFooter {
+  padding: 5px 10px;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+}
+footer .seccionFooter .tituloFooter {
+  font-size: large;
+  margin-bottom: 5px;
+}
+footer .seccionFooter ul {
+  padding: 5px;
+  list-style: none;
+  font-size: large;
+  margin-bottom: 0px;
+}
+footer .seccionFooter ul li a {
+  color: #BD81A0;
+  text-decoration: none;
+}
+footer .seccionFooter .contacto {
+  margin-bottom: 10px;
+}
+footer .seccionFooter input {
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+}
+footer .seccionFooter .btnFooter {
+  background-color: #BD81A0;
+  color: #80C58D;
+  font-family: "Pacifico", cursive;
+  border: none;
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+footer .seccionFooter .medios-pago {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 75px);
+}
+footer .seccionFooter .medios-pago img {
+  justify-self: center;
+  margin: 2px;
+  height: 45px;
+  width: 70px;
+}
+
+@media (min-width: 640px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .seccionFooter1 {
+    order: 1;
+  }
+  footer .seccionFooter2 {
+    order: 3;
+  }
+  footer .seccionFooter3 {
+    order: 4;
+  }
+  footer .seccionFooter4 {
+    order: 2;
+  }
+  footer .seccionFooter4 .ubicacion iframe {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .seccionFooter1 {
+    order: 1;
+  }
+  footer .seccionFooter2 {
+    order: 2;
+  }
+  footer .seccionFooter3 {
+    order: 3;
+  }
+  footer .seccionFooter4 {
+    order: 4;
+  }
+}
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nosotros .evolucionHistorica {
+  flex-wrap: wrap;
+}
+.nosotros .evolucionHistorica img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+.nosotros .historia {
+  text-align: justify;
+  padding: 20px;
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+}
+
+@media (min-width: 960px) {
+  .evolucionHistorica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .evolucionHistorica img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    height: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .nosotros .evolucionHistorica {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nosotros .evolucionHistorica img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    height: 85%;
+  }
+  .nosotros .historia {
+    grid-column: 7/11;
+  }
+}
+.mainContacto {
+  margin-bottom: 20px;
+}
+.mainContacto .mb-3 {
+  padding: 10px;
+  margin-bottom: 0px !important;
+}
+.mainContacto .mb-3 .form-label {
+  font-family: "Pacifico", cursive;
+  color: #BD81A0;
+}
+.mainContacto .mb-3 .form-control {
+  border: 1px solid #80C58D;
+}
+.mainContacto .btn {
+  background-color: #80C58D;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+}
+.mainContacto input {
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+}
+.mainContacto .btnContact {
+  background-color: #80C58D;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  border: none;
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.mainContacto .tituloContacto {
+  font-size: large;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+}
+@media (min-width: 640px) {
+  .mainContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mainContacto .ubicacionContacto iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+.carousel-control-prev, .carousel-control-next {
+  margin: 10px 0px 30px;
+  height: 350px;
+  width: 50px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.cards-wrapper .card {
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 300px;
+  height: 350px;
+  border: 2px solid #80C58D;
+  color: #BD81A0;
+}
+.cards-wrapper .card .descripcionTarjeta {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  height: 260px;
+  width: 260px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cards-wrapper .card .descripcionTarjeta h4, .cards-wrapper .card .descripcionTarjeta p {
+  font-family: "Pacifico", cursive;
+}
+.cards-wrapper .card .imagenTarjeta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 276px;
+  width: 276px;
+}
+.cards-wrapper .card .imagenTarjeta:hover {
+  opacity: 0.3;
+}
+.cards-wrapper .card .imagenTarjeta img {
+  height: 100%;
+  width: 100%;
+}
+.cards-wrapper .card .compra {
+  position: absolute;
+  top: 296px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 276px;
+}
+.cards-wrapper .card .compra .precio {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 25px;
+  text-decoration: dotted;
+  font-family: "Pacifico", cursive;
+}
+.cards-wrapper .card .compra .btnCard {
+  background-color: #80C58D;
+  color: #BD81A0;
+  font-family: "Pacifico", cursive;
+  border: none;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 723px) {
+  .carrusel1 {
+    display: none;
+  }
+  .carrusel2 {
+    display: none;
+  }
+}
+@media (min-width: 724px) and (max-width: 1024px) {
+  .carrusel1 {
+    display: none;
+  }
+  .carrusel3 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .carrusel2 {
+    display: none;
+  }
+  .carrusel3 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

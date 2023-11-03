@@ -1,0 +1,41 @@
+.seccionInicio{
+    @extend %flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .producto{
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        &:hover{
+            background-image: none;
+        }        
+        a{
+            @extend %flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            text-decoration: none;
+            color: $color-primary;
+            font-family: $font-page;
+            font-size: large;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .tortas{
+        background-image: url(../images/torta.jpg);
+    }
+    .macarons{
+        background-image: url(../images/macarron.jfif);
+    }
+    .cookies{
+        background-image: url(../images/cookies.jfif);
+        text-align: center;
+    }
+    .petitsFours{
+        background-image: url(../images/petitsFours.jfif);
+    }
+}

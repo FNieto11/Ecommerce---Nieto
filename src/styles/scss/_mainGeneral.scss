@@ -1,0 +1,7 @@
+h1, h2, .titulo, .tituloProducto{
+    font-family: $font-page;
+    color: $color-primary;
+    @extend %flex;
+    text-align: center;
+    margin: 20px;
+}

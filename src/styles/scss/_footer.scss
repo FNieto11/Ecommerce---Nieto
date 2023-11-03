@@ -1,0 +1,97 @@
+footer{
+    background-color: $color-secundary;
+    padding: 10px 0px;;
+    .seccionFooter{
+        padding: 5px 10px;
+        color: $color-primary;
+        font-family: $font-page;
+        .tituloFooter {
+            @extend %flex;
+            font-size: large;
+            margin-bottom: 5px;
+        }
+        ul{
+            padding: 5px;
+            list-style: none;
+            font-size: large;
+            margin-bottom: 0px;
+            li a{
+                @extend %flex;
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+        .contacto{
+            margin-bottom: 10px;
+        }
+        input{
+            font-family: $font-page;
+            border-radius: 10px;
+        }
+        .btnFooter{
+            @include boton($color-primary,$color-secundary);
+            border: none;
+            height: 35px;
+            width: 60px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .medios-pago {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(4, 75px);
+            img{
+                justify-self: center;
+                margin: 2px;
+                height: 45px;
+                width: 70px;
+            }
+        }
+    }
+}
+
+.redesSociales, .suscripcionMail, .ubicacion {
+    @extend %flex;
+}
+
+@media (min-width: 640px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .seccionFooter1 {
+            order: 1;
+        }
+        .seccionFooter2 {
+            order: 3;
+        }
+        .seccionFooter3 {
+            order: 4;
+        }
+        .seccionFooter4 {
+            order: 2;
+            .ubicacion iframe{
+                width: 250px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .seccionFooter1 {
+            order: 1;
+        }
+        .seccionFooter2 {
+            order: 2;
+        }
+        .seccionFooter3 {
+            order: 3;
+        }
+        .seccionFooter4 {
+            order: 4;
+        }
+    }
+}

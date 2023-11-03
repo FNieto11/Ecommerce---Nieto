@@ -1,0 +1,51 @@
+.mainContacto{
+    margin-bottom: 20px;
+    .mb-3 {
+        padding: 10px;
+        margin-bottom: 0px!Important;
+        .form-label {
+            font-family: $font-page;
+            color: $color-primary;
+        }
+        .form-control {
+            border: 1px solid $color-secundary;
+        }
+    }
+    .btn {
+        @include boton($color-secundary,$color-primary);
+        margin: 10px;
+    }
+    input{
+        font-family: $font-page;
+        border-radius: 10px;
+    }
+    .btnContact{
+        @include boton($color-secundary,$color-primary);
+        border: none;
+        height: 40px;
+        width: 60px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    .tituloContacto{
+        @extend %flex;
+        font-size: large;
+        color: $color-primary;
+        font-family: 'Pacifico', cursive;
+        margin: 10px;
+    }
+    .ubicacionContacto {
+        @extend %flex;
+    }
+}
+
+@media (min-width: 640px) {
+    .mainContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .ubicacionContacto iframe{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

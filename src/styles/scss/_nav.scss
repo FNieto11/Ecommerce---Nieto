@@ -1,0 +1,53 @@
+nav{
+    background-color: white;
+    border-bottom: 2px solid $color-secundary;
+    margin: 1.5%;
+    .navbar-brand {
+        width: 30%;
+        .logo {
+            width: 100%;
+        }
+    }
+    .navbar-toggler {
+        color: $color-secundary;
+    }
+    .nav-link {
+        color: $color-primary;
+        font-size: x-large;
+        text-align: end;
+        font-family: $font-page;
+    }
+}
+
+@media (min-width: 640px) {
+    .navbar-brand {
+        width: 25%;
+    }
+    .navbar-toggler {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        display: grid!Important;
+        grid-template-columns: 1fr 4fr;
+        .navbar-brand {
+            width: 85%;
+        }
+        .navbar-nav {
+            display: grid!Important;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            font-size: xx-large;
+            font-family: $font-page;
+            text-align: center;
+            .nav-link {
+                color: $color-primary;
+            }
+        }
+    }
+}

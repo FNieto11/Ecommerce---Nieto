@@ -1,0 +1,100 @@
+.carousel-control-prev, .carousel-control-next {
+    margin: 10px 0px 30px;
+    height: 350px;
+    width: 50px;
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    .card{
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+        border: 2px solid $color-secundary;
+        color: $color-primary;
+        .descripcionTarjeta {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            height: 260px;
+            width: 260px;
+            @extend %flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h4, p{
+                font-family: $font-page;
+            }
+        }
+        .imagenTarjeta {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 276px;
+            width: 276px;
+            &:hover {
+                opacity: 0.3;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .compra{
+            position: absolute;
+            top: 296px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            width: 276px;
+            .precio{
+                display: flex;
+                align-items: center;
+                margin:0;
+                font-size: 25px;
+                text-decoration: dotted;
+                font-family: $font-page;
+            }
+            .btnCard {
+                @include boton($color-secundary,$color-primary);
+                border: none;
+                height: 40px;
+                width: 80px;
+                border-radius: 10px;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media (max-width: 723px) {
+    .carrusel1{
+        display:none;
+    }
+    .carrusel2{
+        display:none;
+    }
+}
+
+@media (min-width: 724px) and (max-width: 1024px) {
+    .carrusel1{
+        display:none;
+    }
+    .carrusel3{
+        display:none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carrusel2{
+        display:none;
+    }
+    .carrusel3{
+        display:none;
+    }
+}
