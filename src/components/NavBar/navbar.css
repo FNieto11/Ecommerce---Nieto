@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    background-color: white;
+    border-bottom: 2px solid #80C58D;
+    margin: 1.5%;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+
+        width: 15%;
+    }
+    .list {
+        width: 60%;
+        justify-content: space-between;
+        display: flex;
+        color: #BD81A0;
+        font-size: x-large;
+        text-align: end;
+        font-family: 'Pacifico', cursive;
+        list-style: none;
+    }
+    .cart-container{
+        width: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color:#BD81A0;
+        font-family: 'Pacifico', cursive;
+        .cart{
+            width: 40%;
+        }
+    }
+    
+}
+
+.usuario{
+    color:#BD81A0;
+    font-family: 'Pacifico', cursive;
+}

@@ -1,14 +1,13 @@
-import Banner from "./components/Banner"
 import './App.css'
+import NavBar from "./components/NavBar/NavBar"
+import ItemListContainer from './components/NavBar/ItemListContainer'
 
 function App() {
   
   return (
     <div>
-      <Banner/>
-      <h1>Hola Mundo!!</h1>
-      <p>Hola Facundo</p>
-      <Banner/>
+      <NavBar/>
+      <ItemListContainer />
     </div>
   )
 }
