@@ -3,7 +3,7 @@ let saludo = prompt('Por favor ingrese su nombre', 'Facundo');
 
     return (
         <>
-            <h1 className= 'usuario'>Bienevenido {saludo}</h1>
+            <h1 className= 'usuario'>Bienvenido {saludo}</h1>
         </>
     )
 }
