@@ -1,9 +1,8 @@
-const ItemListContainer = () => {
-let saludo = prompt('Por favor ingrese su nombre', 'Facundo');
+const ItemListContainer = ({saludo}) => {
 
     return (
         <>
-            <h1 className= 'usuario'>Bienvenido {saludo}</h1>
+            <h1 className= 'usuario'>{saludo}</h1>
         </>
     )
 }
