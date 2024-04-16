@@ -1,10 +1,14 @@
 const ItemDetail = ({product}) => {
   return (
-    <div>
-        <h1>{product.name}</h1>
+    <div className="item-detail">
+      <div className="image-detail">
         <img src={product.image}/>
-        <p>{product.description}</p>
-        <p>{product.price}</p>
+      </div>
+      <div className="info-detail">
+        <h3 className="title">{product.name}</h3>
+        <p className="description">{product.description}</p>
+        <p className="price">{product.price}</p>
+      </div>
     </div>
   )
 }
