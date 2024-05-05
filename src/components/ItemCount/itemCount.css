@@ -1,0 +1,28 @@
+.item-count{
+    display: flex;
+}
+.button-add{
+    border-radius: 10px;
+    border: none;
+    background-color: #80C58D;
+    color: #BD81A0;
+    padding: 0 30px;
+    font-size: 15px;
+}
+.controls-count{
+    display: flex;
+    margin-left: 20px;
+}
+.count{
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.button-count{
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #80C58D;
+    color: #BD81A0;
+    padding: 5px 15px;
+}

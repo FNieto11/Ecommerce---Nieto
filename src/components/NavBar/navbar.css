@@ -21,16 +21,14 @@ nav{
         font-family: 'Pacifico', cursive;
     }
     .cart-container{
-        width: 7%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        color:#BD81A0;
-        font-family: 'Pacifico', cursive;
-        .cart{
-            width: 40%;
-        }
+        .carrito{
+            display: flex;
+            align-items: center;
+            color:#BD81A0;
+            font-family: 'Pacifico', cursive;
+            text-decoration: none;
     }
+}
 }
 
 @media (min-width: 640px) {
