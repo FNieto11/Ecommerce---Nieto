@@ -30,7 +30,7 @@ h1{
             flex-direction: column;
             align-items: center;
             text-align: center;
-            h4, p{
+            h4, div{
                 font-family: 'Pacifico', cursive;
             }
         }

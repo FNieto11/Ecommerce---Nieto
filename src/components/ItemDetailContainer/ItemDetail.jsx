@@ -22,7 +22,7 @@ const ItemDetail = ({product}) => {
       </div>
       <div className="info-detail">
         <h3 className="title">{product.name}</h3>
-        <div className="description"><div dangerouslySetInnerHTML={{ __html: product.fulldescription }}/></div>
+        <div className="description">{product.fulldescription}</div>
         <div className="controlador">
           <p className="price">Precio: ${product.price}</p>
           {clickAdd ? <Link className="button-go-to-cart" to="/cart">Ir al carrito</Link> : <ItemCount handleAddToCart={handleAddToCart} stock={product.stock}/>}
