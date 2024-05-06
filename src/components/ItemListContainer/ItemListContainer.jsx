@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react"
 import ItemList from "./ItemList"
-import getProducts from "../../data/getProducts"
 import "./itemListContainer.css"
 import {useParams} from "react-router-dom"
 import ItemLoading from "../../loadings/ItemLoading"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import db from "../../db/db"
 
 const ItemListContainer = ({saludo}) => {
     const [products, setProducts] = useState([])
@@ -11,22 +12,34 @@ const ItemListContainer = ({saludo}) => {
 
     const {idCategory} = useParams()
 
-    useEffect(()=>{
-        setLoading(true)
+    const getProducts = async() => {
+        const dataDb = await getDocs(collection(db, "products"))
+        
+        const data = dataDb.docs.map((productDb)=>{
+            return {id: productDb.id, ...productDb.data()}
+        })
 
-        getProducts
-            .then((respuesta)=>{
-                if(idCategory){
-                    //filtrarlos productos
-                    const newProducts = respuesta.filter((producto)=>producto.category===idCategory)
-                    setProducts(newProducts)
-                }else{
-                    //devolver todos los productos
-                    setProducts(respuesta)
-                }
-            })
-            .catch((error)=>console.log(error))
-            .finally(()=>setLoading(false))
+        setProducts(data)
+    }
+
+    const getProductsByCategory = async() =>{
+        const q = query(collection(db, "products"), where("category", "==", idCategory))
+        
+        const dataDb = await getDocs(q)
+        
+        const data = dataDb.docs.map((productDb)=>{
+            return {id: productDb.id, ...productDb.data()}
+        })
+
+        setProducts(data)
+    }
+
+    useEffect(()=>{
+        if(idCategory){
+            getProductsByCategory()
+        }else{
+            getProducts()
+        }
     },[idCategory])
 
     return (
