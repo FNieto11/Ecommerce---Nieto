@@ -124,7 +124,7 @@ const products = [
         name: "Macarons de Chocolate",
         description: "Merengue de almendras con cacao rellenos de ganache de chocolate",
         fulldescription: "Estos macarons de chocolate son una auténtica obra maestra culinaria. Con una base de merengue de almendras y cacao, cada uno de estos delicados bocados ofrece una textura crujiente por fuera y suave por dentro. El relleno de ganache de chocolate añade una decadencia irresistible, con su suavidad sedosa y su intenso sabor a cacao. Cada mordisco es una explosión de placer para el paladar, combinando la sutileza del merengue con la riqueza del chocolate en una armonía perfecta. Estos macarons son el epítome de la elegancia y el lujo, perfectos para deleitar a los amantes del chocolate en cualquier ocasión especial.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronChocolate.jpg"
@@ -134,7 +134,7 @@ const products = [
         name: "Macarons de Dulce de Leche",
         description: "Merengue de nuez relleno de dulce de leche",
         fulldescription: "Estos macarons de dulce de leche son una verdadera delicia que combina la delicadeza del merengue de nuez con la cremosidad irresistible del dulce de leche. Cada bocado ofrece una experiencia celestial: una capa crujiente por fuera que da paso a un interior suave y aireado. El dulce de leche, con su sabor caramelizado y su textura indulgente, se convierte en el relleno perfecto, añadiendo una dulzura decadente que se funde con el sabor tostado de las nueces en el merengue. Es una combinación de sabores y texturas que deleitará los sentidos y dejará un recuerdo dulce y reconfortante en cada paladar.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronDL.jpg"
@@ -144,7 +144,7 @@ const products = [
         name: "Macarons de Limón",
         description: "Merengue de almendras relleno de curd de limón",
         fulldescription: "Estos macarons de limón son una verdadera explosión de frescura y sabor cítrico. Con una base de merengue de almendras, cada macaron ofrece una textura crujiente por fuera y suave por dentro, complementada con el relleno de curd de limón. El curd de limón, con su intensidad ácida y suavidad sedosa, se funde perfectamente con la sutileza del merengue, creando una experiencia gustativa refrescante y exquisita. Cada bocado es como un rayo de sol en el paladar, perfecto para disfrutar en cualquier momento del día como una indulgencia fresca y deliciosa.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronLimon.jpg"
@@ -154,7 +154,7 @@ const products = [
         name: "Macarons de Frambuesa",
         description: "Merengue de almendras relleno de crema de frambuesa",
         fulldescription: "Estos macarons de frambuesa son una verdadera delicia para los amantes de los sabores frutales y dulces. Con una base de merengue de almendras, cada macaron ofrece una textura crujiente por fuera y suave por dentro, que se combina perfectamente con el relleno de crema de frambuesa. La crema de frambuesa, con su intensidad afrutada y suavidad cremosa, añade un toque fresco y exquisito a cada bocado. Es una combinación de sabores y texturas que deleitará los sentidos y dejará un sabor dulce y refrescante en cada paladar. Estos macarons son el acompañamiento perfecto para cualquier ocasión especial o simplemente para deleitarse con un capricho delicioso.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronFrambuesa.jpg"
@@ -164,7 +164,7 @@ const products = [
         name: "Macarons de Maracuyá",
         description: "Merengue de almendras relleno de curd de maracuyá",
         fulldescription: "Estos macarons de maracuyá son una explosión de sabor tropical en cada bocado. Con una base de merengue de almendras, cada macaron ofrece una textura crujiente por fuera y suave por dentro, que se complementa perfectamente con el relleno de curd de maracuyá. El curd de maracuyá, con su vibrante sabor agridulce y su textura sedosa, agrega una nota refrescante y exótica a cada mordisco. Es una combinación perfecta de sabores y texturas que deleitará los sentidos y transportará al paladar a un paraíso tropical. Estos macarons son ideales para disfrutar en cualquier ocasión y para aquellos que buscan un toque de frescura y aventura en sus postres.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronMaracuya.jpg"
@@ -174,7 +174,7 @@ const products = [
         name: "Macarons de Pistacho",
         description: "Merengue de almendras con pistacho relleno de crema de pistacho",
         fulldescription: "Estos macarons de pistacho son una exquisitez para los amantes de este fruto seco. Con una base de merengue de almendras y pistacho, cada macaron ofrece una textura crujiente por fuera y suave por dentro, que se complementa a la perfección con el relleno de crema de pistacho. La crema de pistacho, con su sabor intenso y suavidad cremosa, añade una nota deliciosa y reconfortante a cada bocado. Es una combinación armoniosa de sabores y texturas que deleitará los sentidos y dejará un sabor delicioso y satisfactorio en cada paladar. Estos macarons son ideales para disfrutar como postre o como un dulce capricho en cualquier momento del día.",
-        stock: 3,
+        stock: 24,
         price: "700",
         category: "macarons",
         image: "/img/macarons/macaronPistacho.jpg"
@@ -184,7 +184,7 @@ const products = [
         name: "Cookies de Avena",
         description: "Cookies de avena, mantequilla de maní y chips de chocolate",
         fulldescription: "Estas cookies de avena, mantequilla de maní y chips de chocolate son una combinación irresistible de sabores y texturas. Cada galleta está cargada con trozos de avena que le dan una textura robusta y nutritiva, mientras que la mantequilla de maní aporta un rico sabor y una suavidad cremosa. Los chips de chocolate, derretidos en cada bocado, añaden un toque de dulzura indulgente que complementa perfectamente el sabor salado de la mantequilla de maní. Estas cookies son el acompañamiento perfecto para una taza de leche o una merienda rápida para satisfacer los antojos de dulce y salado.",
-        stock: 3,
+        stock: 48,
         price: "400",
         category: "cookies",
         image: "/img/cookies/cookiesAvena.jpg"
@@ -194,7 +194,7 @@ const products = [
         name: "Cookies de Limón",
         description: "Cookies masa sablé rellenas de Lemon curd",
         fulldescription: "Estas cookies de masa sablé, rellenas de lemon curd, son una delicia que combina la textura crujiente y mantecosa de la masa con la frescura y acidez del lemon curd. Cada galleta se deshace en la boca, liberando un estallido de sabor cítrico y dulce que deleita los sentidos. El contraste entre la suavidad de la masa y la intensidad del lemon curd crea una experiencia gustativa única y satisfactoria. Estas cookies son perfectas para disfrutar en cualquier momento del día, ya sea como postre después de una comida o como un tentempié indulgente junto a una taza de té.",
-        stock: 3,
+        stock: 48,
         price: "200",
         category: "cookies",
         image: "/img/cookies/cookiesLimon.jpg"
@@ -204,7 +204,7 @@ const products = [
         name: "Cookies de Manzana",
         description: "Galletas de crumble rellenas de manzana",
         fulldescription: "Estas galletas de crumble rellenas de manzana son una delicia reconfortante que evoca los sabores y aromas del otoño. La base de crumble, con su textura crujiente y migajosa, envuelve un relleno generoso de compota de manzana, que aporta un sabor dulce y reconfortante con un toque de especias cálidas. Cada bocado es una explosión de sabores de temporada, con la combinación perfecta de la dulzura de la manzana y la rusticidad del crumble. Estas galletas son ideales para disfrutar junto a una taza de té caliente en una tarde fresca de otoño o como un capricho dulce para cualquier ocasión especial.",
-        stock: 3,
+        stock: 48,
         price: "400",
         category: "cookies",
         image: "/img/cookies/cookiesManzana.jpg"
@@ -214,7 +214,7 @@ const products = [
         name: "Cookies Suecas",
         description: "Cookies a base de avena y chocolate semiamargo",
         fulldescription: "Estas cookies a base de avena y chocolate semiamargo son una combinación perfecta de lo indulgente y lo nutritivo. Cada galleta está cargada con copos de avena que le dan una textura robusta y satisfactoria, mientras que los trozos de chocolate semiamargo se derriten en la boca, ofreciendo un contraste delicioso entre lo dulce y lo amargo. Estas cookies son ideales para aquellos que buscan un dulce capricho con un toque de bondad saludable, perfectas para disfrutar en cualquier momento del día como un tentempié energético o un postre indulgente con una taza de café o leche.",
-        stock: 3,
+        stock: 48,
         price: "500",
         category: "cookies",
         image: "/img/cookies/cookiesSuecas.jpg"
@@ -224,7 +224,7 @@ const products = [
         name: "Alfajores de Maicena",
         description: "Tapa de maicena, con dulce de leche y coco",
         fulldescription: "Los alfajores de maicena son un clásico dulce latinoamericano que deleita con su combinación de sabores y texturas. Con una tapa de maicena que se deshace en la boca, estas galletas son el lienzo perfecto para el dulce de leche, que añade una cremosidad indulgente y un sabor caramelizado irresistible. Para rematar esta delicia, se espolvorea coco rallado sobre el dulce de leche, aportando un toque de frescura y una textura crujiente que completa la experiencia. Cada bocado es una explosión de sabores tropicales y dulzura reconfortante, perfecto para disfrutar en cualquier ocasión o para endulzar el día con un sabor delicioso y reconfortante.",
-        stock: 3,
+        stock: 48,
         price: "200",
         category: "cookies",
         image: "/img/cookies/alfajoresMaicena.jpg"
@@ -234,7 +234,7 @@ const products = [
         name: "Alfajores de Chocolate",
         description: "Aljaores de dulce de leche con cobertura de chocolate blanco, con leche y semiamargo",
         fulldescription: "Los alfajores de dulce de leche con cobertura de chocolate blanco, con leche y semiamargo son una exquisitez que combina lo mejor de ambos mundos: la dulzura del dulce de leche con la cremosidad del chocolate y el contraste entre el chocolate blanco, con leche y semiamargo. Cada bocado ofrece una explosión de sabores y texturas, desde la suavidad sedosa del dulce de leche hasta la intensidad del chocolate, con un toque de amargor en el chocolate semiamargo que equilibra la dulzura del conjunto. Estos alfajores son perfectos para satisfacer los antojos de dulce y chocolate, ideales para disfrutar en cualquier momento del día como un capricho indulgente o como un regalo especial para alguien querido.",
-        stock: 3,
+        stock: 48,
         price: "300",
         category: "cookies",
         image: "/img/cookies/alfajoresChocolate.jpg"
@@ -244,7 +244,7 @@ const products = [
         name: "Caja Nantes",
         description: "3 rogel<br/>3 marquise<br/>3 almendras con frutos rojos<br/>3 apple crumble",
         fulldescription: "3 Rogel: Capas de dulce de leche entre hojuelas de masa sablé, coronadas con merengue italiano, son un homenaje a la dulzura y la textura crujiente.<br/>3 Marquise: Estos pequeños postres, con su rico sabor a chocolate y su textura suave y sedosa, son un deleite para los amantes del cacao.<br/>3 Almendras con frutos rojos: La combinación de la crocancia de las almendras con la frescura y acidez de los frutos rojos es una explosión de sabor en cada bocado.<br/>3 Apple Crumble: La mezcla de manzanas dulces y canela, cubierta con una crujiente capa de crumble, evoca los sabores reconfortantes de un delicioso postre casero.",
-        stock: 3,
+        stock: 12,
         price: "7000",
         category: "petitsFours",
         image: "/img/petitsFours/nantes.jpg"
@@ -254,7 +254,7 @@ const products = [
         name: "Caja Lyon",
         description: "3 tarteleta de frutos rojos<br/>3 marquise<br/>3 lemon pie<br/>3 havanette negro",
         fulldescription: "3 Tarteletas de Frutos Rojos: Estas tarteletas son una explosión de frescura con una mezcla de frutos rojos que contrasta perfectamente con la dulzura de la base de masa sablé.<br/>3 Marquise: Con su rico sabor a chocolate y su textura sedosa, estas marquise son un verdadero placer para los amantes del cacao.<br/>3 Lemon Pie: La combinación de la acidez del limón con la dulzura de la crema de limón y la base de masa brisa hace de estos Lemon Pie un postre deliciosamente refrescante.<br/>3 Havanette Negro: Estos dulces son una fiesta para el paladar, con su combinación de chocolate negro y coco que crea un equilibrio perfecto entre lo dulce y lo exótico.",
-        stock: 3,
+        stock: 12,
         price: "7000",
         category: "petitsFours",
         image: "/img/petitsFours/lyon.jpg"
@@ -264,7 +264,7 @@ const products = [
         name: "Caja Niza",
         description: "3 cheesecake con frutos rojos<br/>3 marquise<br/>3 rogel<br/>3 cheesecake de dulce de leche",
         fulldescription: "3 Cheesecake con Frutos Rojos: Estos pequeños cheesecakes combinan la suavidad y cremosidad del queso crema con la frescura de los frutos rojos, creando un equilibrio perfecto entre lo dulce y lo ácido.<br/>3 Marquise: Con su intenso sabor a chocolate y su textura sedosa, estas marquise son un auténtico placer para los amantes del cacao.<br/>3 Rogel: Capas de dulce de leche entre hojuelas de masa sablé, coronadas con merengue italiano, hacen de estos rogel una experiencia irresistible.<br/>3 Cheesecake de Dulce de Leche: Estos cheesecakes son un homenaje a la dulzura del dulce de leche, con una base de galleta y una capa cremosa de queso crema con dulce de leche, perfectamente equilibrados en sabor y textura.",
-        stock: 3,
+        stock: 12,
         price: "7000",
         category: "petitsFours",
         image: "/img/petitsFours/niza.jpg"
@@ -274,7 +274,7 @@ const products = [
         name: "Caja Chocolatosa",
         description: "4 alfajor de dulce de leche<br/>4 alfajor de chocolate<br/>3 marquise<br/>3 havanette negro",
         fulldescription: "4 Alfajores de Dulce de Leche: Con su clásica combinación de dos tapas de masa suave y un relleno generoso de dulce de leche, estos alfajores son un homenaje a la dulzura tradicional.<br/>4 Alfajores de Chocolate: Una variante deliciosa de los clásicos alfajores, con tapas de masa de chocolate que encierran un relleno cremoso de dulce de leche, cubiertos con una fina capa de chocolate.<br/>3 Marquise: Estos pequeños postres de chocolate son una verdadera indulgencia, con su textura suave y cremosa que se deshace en la boca, ofreciendo un intenso sabor a cacao.<br/>3 Havanette Negro: Con su combinación de chocolate negro y coco, estos dulces son una fiesta para el paladar, con un equilibrio perfecto entre lo dulce y lo exótico.",
-        stock: 3,
+        stock: 12,
         price: "7000",
         category: "petitsFours",
         image: "/img/petitsFours/chocolatosa.jpg"
@@ -284,7 +284,7 @@ const products = [
         name: "Caja Degustación",
         description: "1 marquise<br/>1 coco y dulce de leche<br/>1 cheesecake con frutos rojos<br/>1 lemon pie<br/>1 havanette<br/>1 apple crumble<br/>1 rogel",
         fulldescription: "Una caja degustación de petits fours es una deliciosa selección de bocados dulces, perfectos para complacer cualquier paladar exigente. Estos diminutos manjares son una mezcla exquisita de sabores y texturas, desde delicados macarons hasta suaves trufas de chocolate, pasando por crujientes galletas y exquisitos mini pasteles. Cada bocado es una obra maestra en miniatura, cuidadosamente elaborada con ingredientes de alta calidad y presentada con elegancia en una caja especialmente diseñada. Ideal para compartir con amigos en una tarde de té o como regalo gourmet, esta caja ofrece una experiencia culinaria inolvidable en cada mordisco.",
-        stock: 3,
+        stock: 12,
         price: "5600",
         category: "petitsFours",
         image: "/img/petitsFours/degustación.jpg"
@@ -294,7 +294,7 @@ const products = [
         name: "Caja Personalizada",
         description: "12 petits fours a elección",
         fulldescription: "Disfruta de una selección exquisita con nuestros 12 petits fours a elección. Desde clásicos como marquise de chocolate y alfajores de dulce de leche hasta opciones innovadoras como cheesecake con frutos rojos y lemon pie, cada bocado es una experiencia gourmet en miniatura. Con sabores que deleitan y texturas que sorprenden, esta variedad ofrece el placer perfecto para cualquier ocasión. Ya sea para una reunión íntima o un regalo especial, nuestros petits fours son el toque final perfecto para deleitar a tus seres queridos con una experiencia dulce y elegante.",
-        stock: 3,
+        stock: 12,
         price: "7600",
         category: "petitsFours",
         image: "/img/petitsFours/armalo.jpg"

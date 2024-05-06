@@ -49,4 +49,32 @@
     background-color: #80C58D;
     color: #BD81A0;
     padding: 10px 50px;
+    font-size:x-large;
+    text-decoration: none;
+    margin: 10px;
+}
+.button-cart-2{
+    border: none;
+    border-radius: 10px;
+    background-color: #80C58D;
+    color: #BD81A0;
+    padding: 7px 35px;
+    font-size:x-large;
+    text-decoration: none;
+    margin: 10px;
+}
+.emptyCart{
+    margin: 50px 50px;
+    color: #BD81A0;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size:x-large;
+}
+.button-cart-empty{
+    border: none;
+    border-radius: 10px;
+    background-color: #80C58D;
+    color: #BD81A0;
+    padding: 0px 40px;
+    text-decoration: none;
 }

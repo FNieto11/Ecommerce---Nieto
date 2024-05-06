@@ -21,9 +21,9 @@ const Item = ({product}) => {
         <div className="card" key={product.id} style={estiloCard} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
             <div className="descripcionTarjeta">
                 <h4>{product.name}</h4>
-                <p><div dangerouslySetInnerHTML={{ __html: product.description }}/></p>
+                <div><div dangerouslySetInnerHTML={{ __html: product.description }}/></div>
             </div>
-            <div class="imagenTarjeta">
+            <div className="imagenTarjeta">
                 <img src={product.image} alt={product.name}/>
             </div>
             <div className="compra">
