@@ -1,5 +1,7 @@
 const FormularioCheckout = ({dataForm, handleChangeInput, handleSubmit}) => {
   return (
+    <div>
+    <h1>Formulario de Compra</h1>
     <form onSubmit={handleSubmit}> 
       <div className="seccionContacto">
         <div className="mb-3">
@@ -34,6 +36,7 @@ const FormularioCheckout = ({dataForm, handleChangeInput, handleSubmit}) => {
         <button className="btn" type="submit">Enviar Orden</button>
       </div>
     </form>
+    </div>
   )
 }
 
