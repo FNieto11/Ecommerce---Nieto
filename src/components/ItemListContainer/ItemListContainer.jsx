@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
-import ItemList from "./ItemList"
-import "./itemListContainer.css"
 import {useParams} from "react-router-dom"
-import ItemLoading from "../../loadings/ItemLoading"
 import { collection, getDocs, query, where } from "firebase/firestore"
+import ItemList from "./ItemList"
+import ItemLoading from "../../loadings/ItemLoading"
 import db from "../../db/db"
+import "./itemListContainer.css"
 
 const ItemListContainer = ({saludo}) => {
     const [products, setProducts] = useState([])
