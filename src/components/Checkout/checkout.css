@@ -1,3 +1,28 @@
 .codeID{
     font-family: 'Courier New', Courier, monospace;
 }
+.seccionContacto{
+    margin: 30px;
+    .mb-3 {
+        padding: 10px;
+        margin-bottom: 0px!Important;
+        .form-label {
+            font-family: 'Pacifico', cursive;
+            color: #BD81A0;
+        }
+        .form-control {
+            border: 1px solid #80C58D;
+        }
+    }
+    .btn {
+        background-color: #80C58D;
+        color: #BD81A0;;
+        font-family: 'Pacifico', cursive;
+        margin: 10px;
+    }
+}
+.form-option {
+    font-family: 'Pacifico', cursive;
+    color: #BD81A0;
+    margin-left: 20px;
+}

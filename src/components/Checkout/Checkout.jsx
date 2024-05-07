@@ -12,6 +12,8 @@ const Checkout = () => {
         name: "",
         phone: "",
         email: "",
+        payment: "",
+        comment: "",
     })
 
     const [idOrder, setIdOrder] = useState(null)
