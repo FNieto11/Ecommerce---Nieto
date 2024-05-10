@@ -26,7 +26,6 @@ const Cart = () => {
                         <p className="info-product-cart">Cantidad: {product.quantity}</p>
                         <p className="info-product-cart">Precio Unit.: $ {product.price}</p>
                         <p className="info-product-cart">Total: $ {product.quantity * product.price}</p>
-
                         <button className="botonArtCarrito" onClick={()=>deleteProductById(product.id)}>Eliminar Producto</button>
                 </div>
                 ))}
